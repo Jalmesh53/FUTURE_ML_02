@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large / generated files (optional)
+*.pbix
+
+# OS
+.DS_Store
