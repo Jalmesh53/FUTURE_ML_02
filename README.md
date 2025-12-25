@@ -2,41 +2,63 @@
 
 ## 📌 Project Overview
 
-This project is part of the **Future Interns Machine Learning Internship**. The goal was to build a machine learning model to predict whether a customer will stop using a service (churn) based on their usage behavior and demographics.
+This project is part of the **Future Interns Machine Learning Internship (Task 2)**.  
+The objective is to build a **machine learning model** that predicts whether a customer is likely to stop using a service (churn) based on their usage behavior and demographics.
 
-By analyzing customer data, this system identifies high-risk customers, allowing businesses to take proactive measures to retain them.
+By analyzing customer data, the system identifies **high-risk customers**, enabling businesses to take **proactive retention measures**.
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Python**: Core programming language.
-- **Pandas & NumPy**: Data cleaning and manipulation.
-- **XGBoost**: High-performance gradient boosting classifier for prediction.
-- **Scikit-learn**: For label encoding, data splitting, and evaluation metrics.
-- **Seaborn/Matplotlib**: Feature importance and confusion matrix visualizations.
-- **Power BI**: Interactive dashboard for business insights.
+- **Python** – Core programming language
+- **Pandas & NumPy** – Data cleaning and manipulation
+- **XGBoost** – Gradient boosting classifier for churn prediction
+- **Scikit-learn** – Data preprocessing, model evaluation, and metrics
+- **Seaborn / Matplotlib** – Visualizations (confusion matrix, feature importance)
+- **Power BI** – Interactive dashboard for business insights
+
+---
 
 ## 📊 Key Features
 
-- **Data Preprocessing**: Handled missing values (`TotalCharges`) and encoded categorical variables (e.g., Contract Type, Payment Method).
-- **Predictive Modeling**: Trained an **XGBoost Classifier** to predict churn probability.
-- **Evaluation**: Achieved high accuracy and analyzed performance using a Confusion Matrix.
-- **Insights Dashboard**: Built a Power BI dashboard to visualize churn rates by demographic and service type.
+- **Data Preprocessing**:
+
+  - Handled missing values (e.g., `TotalCharges`)
+  - Encoded categorical variables (Contract Type, Payment Method, etc.)
+
+- **Predictive Modeling**:
+
+  - Trained an **XGBoost Classifier** to predict customer churn probability
+
+- **Model Evaluation**:
+
+  - Accuracy analysis and performance evaluation using a **Confusion Matrix**
+
+- **Visualization & Insights**:
+  - Power BI dashboard showing churn trends by demographics and service type
+
+---
 
 ## 🔍 Key Insights
 
-- **Top Factor for Churn:** _[Contract Type / Monthly Charges]_ was identified as the strongest predictor of whether a customer leaves.
-- **High-Risk Segment:** Customers with _[Month-to-Month]_ contracts and _[Fiber Optic]_ internet service showed the highest churn rates.
+- **Top Churn Driver**: Contract type and monthly charges strongly influence churn behavior
+- **High-Risk Segment**: Customers with **month-to-month contracts** and **fiber optic internet** show higher churn rates
+
+---
 
 ## 📂 Project Structure
 
-- `churn_model.ipynb`: The complete Python script (Data Loading -> Modeling -> Evaluation).
-- `churn_data.csv`: The cleaned dataset used for training.
-- `churn_predictions.csv`: The final output file containing actual vs. predicted values and churn probabilities.
-- `Churn_Dashboard.pbix`: The Power BI file visualizing the results.
+- `churn_model.ipynb` – Complete ML workflow (data loading → training → evaluation)
+- `churn_data.csv` – Cleaned dataset used for training
+- `churn_predictions.csv` – Model predictions with churn probabilities
+- `Churn_Dashboard.pbix` – Power BI dashboard file
+
+---
 
 ## 🚀 How to Run
 
-Install dependencies:
+Install required dependencies:
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn xgboost
